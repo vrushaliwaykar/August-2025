@@ -21,8 +21,8 @@ public class Jdbc_test
 			String insertsql="INSERT INTO Students(id,name,age) VALUES(?,?,?)";
 			try(PreparedStatement pstmt=con.prepareStatement(insertsql))
 			{
-				pstmt.setInt(1, 102);
-				pstmt.setString(2, "vrusha");
+				pstmt.setInt(1, 1001);
+				pstmt.setString(2, "Vrushali");
 				pstmt.setInt(3, 21);
 				int rows=pstmt.executeUpdate();
 				System.out.println("Inserted: "+rows);
@@ -49,7 +49,7 @@ public class Jdbc_test
 		String updatesql="UPDATE Students SET age=? WHERE id=?";
 		try(PreparedStatement pstmt1=con.prepareStatement(updatesql))
 		{
-			pstmt1.setInt(1, 102);
+			pstmt1.setInt(1, 101);
 			pstmt1.setInt(2,25);
 			int rows=pstmt1.executeUpdate();
 			System.out.println("Updated: "+rows);

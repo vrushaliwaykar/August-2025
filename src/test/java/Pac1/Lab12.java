@@ -24,10 +24,10 @@ public class Lab12
 		LocalDate endDate=date1.isBefore(date2)?date2:date1;
 		
 		Period duration=Period.between(startDate, endDate);
-		
+		System.out.println("------------------------------------------------------");
 		System.out.println("\nStart Date 1: "+startDate);
 		System.out.println("End Date 2: "+endDate);
-		
+		System.out.println("------------------------------------------------------");
 		System.out.println("\nDuration from "+startDate+" to "+endDate+" :");
 		System.out.println("Years: "+duration.getYears());
 		System.out.println("Months: "+duration.getMonths());

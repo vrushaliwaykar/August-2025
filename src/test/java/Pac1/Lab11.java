@@ -26,8 +26,8 @@ public class Lab11
 		
 		System.out.println("Input Date: "+inputDate);
 		System.out.println("Current Date: "+currentDate);
-		
-		System.out.println("\nDuration from "+inputDate+" to "+currentDate+" :");
+		System.out.println("-------------------------------------------");
+		System.out.println("Duration from "+inputDate+" to "+currentDate+" :");
 		System.out.println("Years: "+duration.getYears());
 		System.out.println("Months: "+duration.getMonths());
 		System.out.println("Days: "+duration.getDays());
