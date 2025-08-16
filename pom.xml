@@ -4,11 +4,24 @@
   <artifactId>2Aug2025</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 <dependencies>
-<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.33</version>
 </dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.34.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>6.2.0</version>
+</dependency>
+
 </dependencies>
 </project>
