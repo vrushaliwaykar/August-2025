@@ -5,24 +5,13 @@
   <parameter name="browser" value="chrome"/>
     <classes>
       <class name="Selenium.Lab9_1_TestNG"/>
+      <class name="Selenium.Lab9_2_TestNG"/>
     </classes>
   </test> <!-- Test_Lab9 -->
   <test thread-count="5" name="edgetest1">
   <parameter name="browser" value="edge"/>
     <classes>
       <class name="Selenium.Lab9_1_TestNG"/>
-    </classes>
-  </test> <!-- Test_Lab9 -->
-  
-  <test thread-count="5" name="chrometest2">
-  <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="Selenium.Lab9_2_TestNG"/>
-    </classes>
-  </test> <!-- Test_Lab9 -->
-  <test thread-count="5" name="edgetest2">
-  <parameter name="browser" value="edge"/>
-    <classes>
       <class name="Selenium.Lab9_2_TestNG"/>
     </classes>
   </test> <!-- Test_Lab9 -->
