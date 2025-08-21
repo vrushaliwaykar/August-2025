@@ -21,7 +21,7 @@ public class Lab12_Properties_Ex
 
         // Load properties
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("C:\\Users\\Satyam\\eclipse-workspace\\Lab14\\src\\test\\resources\\configuration\\config.properties");
+        FileInputStream fis = new FileInputStream("C:\\Users\\Satyam\\eclipse-workspace\\2Aug2025\\config1.properties");
         prop.load(fis);
 
         String url = prop.getProperty("url");
