@@ -1,0 +1,19 @@
+<users>
+    <user>
+        <firstname>geeta</firstname>
+        <lastname>wayal</lastname>
+	<email>admin123@gmail.co</email>
+	<telephone>12345</telephone>
+	<password>admin123</password>
+	<cpassword>admin123</cpassword> 
+    </user>
+    <user>
+        <firstname>seeta</firstname>
+        <lastname>bangar</lastname>
+	<email>bangar123@gmail.co</email>
+	<telephone>67890</telephone>
+	<password>seeta123</password>
+	<cpassword>seeta123</cpassword>
+
+    </user>
+</users>
