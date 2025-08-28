@@ -1,0 +1,10 @@
+<users>
+<user>
+	<firstname></firstname>
+        <lastname></lastname>
+	<email></email>
+	<telephone></telephone>
+	<password></password>
+	<cpassword></cpassword> 
+</user>
+</users>
