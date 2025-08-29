@@ -1,5 +1,7 @@
 package com.orangehrm.base;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -17,6 +19,15 @@ public class BaseTest {
 	protected WebDriver driver;
 	protected ExtentReports extent;
 	protected ExtentTest test;
+	protected String googleUrl = "https://www.google.com";
+	protected String herokuapp = "https://the-internet.herokuapp.com/login";
+	protected String amazon = "https://www.amazon.in/";
+	protected String url="https://www.selenium.dev/selenium/web/web-form.html";
+	protected String herokuapp1 = "https://the-internet.herokuapp.com/javascript_alerts";
+	protected String herokuapp2 = "https://the-internet.herokuapp.com/checkboxes";
+	protected String herokuapp3 = "https://the-internet.herokuapp.com/tables";
+	protected String herokuapp4 = "https://the-internet.herokuapp.com/windows";
+	protected String wiki = "https://www.wikipedia.org/";
 	@BeforeSuite
 	public void setupreport()
 	{
@@ -26,10 +37,12 @@ public class BaseTest {
 	
 	@BeforeMethod
 	  public void setup() {
-		  System.out.println("Before method");
-		  WebDriverManager.chromedriver().setup();
+		   System.out.println("Before method");
+		   WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 			driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			
 	  }
 	  @AfterMethod
 	  public void teardown() {

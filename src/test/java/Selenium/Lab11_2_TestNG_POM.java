@@ -25,7 +25,6 @@ public class Lab11_2_TestNG_POM {
   WebDriver driver;
   @Test(dataProvider = "dp")
   public void f(Integer n, String s) {
-	  
 	  Lab11_POMFile obj=new Lab11_POMFile(driver);
 	  Assert.assertEquals(obj.gettitlefrompage(), "Your Store");
 	  System.out.println("Title verified");
@@ -65,12 +64,12 @@ public class Lab11_2_TestNG_POM {
 	  driver.findElement(By.id("button-search")).click();*/
   }
   @BeforeMethod
-  public void beforeMethod() {
+  public void beforeMethod() throws InterruptedException {
 	  System.out.println("Before method");
 	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver();
 	  driver.get("https://tutorialsninja.com/demo/index.php?");
-	  
+	  Thread.sleep(2000);
   }
 
   @AfterMethod

@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium_Practice.Que7">
+      <class name="com.orangehrm.tests.LoginOrangeHRM">
         <methods>
-          <include name="f"/>
+          <include name="flushreport"/>
+          <include name="setupreport"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Que6_checkbox"/>
         </methods>
-      </class> <!-- Selenium_Practice.Que7 -->
+      </class> <!-- com.orangehrm.tests.LoginOrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

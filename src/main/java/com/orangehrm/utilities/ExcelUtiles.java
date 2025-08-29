@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtiles {
- String projectpath=System.getProperty("user.dir")  ;
+ String projectpath=System.getProperty("user.dir") ;
 	
 	
 	public static Object[][] getdata(String excelpath, String sheetname) throws IOException {

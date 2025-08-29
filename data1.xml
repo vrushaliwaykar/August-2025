@@ -1,0 +1,7 @@
+<users>
+<user>
+<usertag>username</usertag>
+<passtag>password</passtag>
+<continuetag>//button[@type='submit']</continuetag>
+</user>
+</users>
